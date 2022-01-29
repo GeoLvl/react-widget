@@ -16,10 +16,10 @@ class Header extends Component {
         />
         <div className="header-txt">
           <h1>Bonjour, <br/> Je suis Trizzy</h1>
-          {/* <p>Lle maître du jeu !</p> */}
+          <p>Le maître du jeu !</p>
         </div>
         <div className="alt-button">
-          <button className="close-widget">x</button>
+          <button className="close-widget" onClick={() => this.closeWidget()} type="button">x</button>
           {/* <button className="close-widget">!</button> */}
         </div>
       </header>
