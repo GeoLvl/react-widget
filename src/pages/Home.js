@@ -27,7 +27,7 @@ class Home extends React.Component {
       <div className="mainpage">
         <section className="title">
           <h1>Home page of a random website</h1>
-          <h2>Test widget Trizzy</h2>
+          <h2>- Test widget Trizzy -</h2>
         </section>
 
         {this.state.showComponent ? (

@@ -202,6 +202,10 @@
 
 .results {
   margin-top: 1em;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .results-infos {  
@@ -210,8 +214,45 @@
   font-weight: bolder;
 }
 
-.test {
-  /* overflow: scroll; */
+.blue {
+  color: #0acdaf;
+  border-color: #0acdaf;
+}
+
+.links:hover {
+  color: #293897;
+}
+
+.grp-button {
+  display: flex;
+  justify-content: center;
+}
+
+.small-btn {
+  width: 10em;
+  margin: 0 0.5em;
+  padding: 0.7em 1em;
+  background-color: #fff;
+  border-radius: 10px;
+  border: solid #0acdaf 2px;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all 0.4s ease-out;
+}
+.small-btn:hover {
+  width: 10em;
+  margin: 0 0.5em;
+  padding: 0.7em 1em;
+  background-color: #0acdaf;
+  border-radius: 10px;
+  border: solid #9be9dc 2px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.small-btn a {
+  text-decoration: none;
+  color: black;
 }
 
 /* EXP */
