@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Searchbar from "./Searchbar";
-import Header from "./Header";
+// import Header from "./Header";
 
 class Widget extends Component {
   constructor(props) {
@@ -36,7 +36,7 @@ class Widget extends Component {
             <h1>
               Bonjour, <br /> Je suis Trizzy
             </h1>
-            <p>Le maître du jeu !</p>
+            <p className="master">Le maître du jeu !</p>
           </div>
           <div className="alt-button">
             <button
@@ -46,23 +46,18 @@ class Widget extends Component {
             >
               x
             </button>
-            {/* <button className="close-widget">!</button> */}
           </div>
         </header>
-
-        {/* {this.state.showComponent ? <Header /> : null}
-        <button onClick={() => this.closeWidget()} type="button">
-          hide
-        </button>
-        <button onClick={() => this.renderWidget()} type="button">
-          pop
-        </button> */}
         <section className="main-app">
           <h2 className="catch">
-            Je t'aider à prendre de l'expérience dans la gestion des déchets,
-            tout en s'amusant !
+            Ggagne de l'expérience dans la gestion des déchets,
+            tout en t'amusant !
           </h2>
           <Searchbar />
+        </section>
+        <section className="exp">
+        <div className="barre master"><p className="master">niv 0</p>230/1000<p className="master">niv 1</p></div>
+
         </section>
       </div>
     );

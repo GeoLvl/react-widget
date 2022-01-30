@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 .mainpage {
@@ -15,10 +16,11 @@
 }
 
 .title {
-    border: solid rgb(255, 255, 255) 4px;
-    color: white;
-    padding: 2em 3em;
-    font-size: 2rem;
+  border: solid rgb(255, 255, 255) 4px;
+  border-radius: 30px;
+  color: white;
+  padding: 2em 3em;
+  font-size: 2rem;
 }
 
 /* HOME BUTTON */
@@ -62,10 +64,11 @@
 }
 
 .main-app {
+  position: relative;
   background-color: white;
   margin-top: 1em;
   padding: 1em;
-  height: 23rem;
+  height: 70%;
   border-radius: 18px;
   text-align: center;
 }
@@ -103,7 +106,6 @@
 }
 .close-widget:hover {
   background: none;
-  border: none;
   background-color: #0acdaf;
   border: solid white 3px;
   color: white;
@@ -122,9 +124,18 @@
   width: 20%;
 }
 
-.catch-phrase {
-  font-size: 0.9rem;
+.master {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
+
+.catch {
+  font-size: 1rem;
+}
+
+/* INPUT */
+
 .search {
   display: flex;
   flex-direction: row;
@@ -151,6 +162,46 @@
   border: solid #9be9dc 2px;
   align-self: center;
   font-size: 1.3rem;
-  font-weight: bolder;
+  font-weight: 700;
   background-color: #0acdaf;
+}
+
+.submit:hover {
+  margin-top: 0.5em;
+  height: 2.8rem;
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 50px;
+  border: solid #0acdaf 2px;
+  align-self: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: #9be9dc;
+}
+.submit:acive {
+    margin-top: 0.5em;
+    height: 2.8rem;
+    width: 100%;
+    background: none;
+    border: none;
+    border-radius: 50px;
+    border: solid #0acdaf 2px;
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: #ffffff;
+    
+  }
+
+/* EXP */
+
+.barre {
+  border: solid white 2px;
+  margin-top: 0.7em;
+  border-radius: 100px;
+  padding: 0 1em;
+
+  display: flex;
+  justify-content: space-between;
 }

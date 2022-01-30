@@ -22,7 +22,7 @@ class Home extends React.Component {
   render() {
     const render = this.renderWidget;
     const close = this.closeWidget;
-    // const message='hello'
+
     return (
       <div className="mainpage">
         <section className="title">
@@ -45,8 +45,6 @@ class Home extends React.Component {
         ) : (
           <Widget render={render} close={close} />
         )}
-        {/* <div><Button onClick={() => this.closeWidget()} type="button"/></div>
-                <div><Widget/></div> */}
       </div>
     );
   }
