@@ -1,8 +1,23 @@
 import React, { Component } from "react";
 
 class Searchbar extends Component {
-  state = {
-    showComponent: false,
+  constructor(props) {
+    super(props);
+    this.state = {
+      showComponent: true,
+    };
+  }
+
+  showResults = () => {
+    this.setState({
+      showComponent: false,
+    });
+  };
+
+  hideResults = () => {
+    this.setState({
+      showComponent: true,
+    });
   };
 
   check = () => {
@@ -10,6 +25,7 @@ class Searchbar extends Component {
   };
 
   render() {
+    
     return (
       <div className="search">
         <form>
@@ -19,7 +35,7 @@ class Searchbar extends Component {
               placeholder="quel est ton déchet ?"
             ></input>
             <button className="submit"
-            onClick={() => this.check()} type="button">let's play !</button>
+            onClick={() => this.props.results()} type="button">Let's play !</button>
           </div>
         </form>
       </div>

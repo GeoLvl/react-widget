@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import Results from "./Results";
 import Searchbar from "./Searchbar";
-// import Header from "./Header";
+// import Results from "./Results";
 
 class Widget extends Component {
   constructor(props) {
@@ -10,20 +11,23 @@ class Widget extends Component {
     };
   }
 
-  renderWidget = () => {
-    this.setState({
-      showComponent: true,
-    });
-  };
-
-  closeWidget = () => {
+  showResults = () => {
     this.setState({
       showComponent: false,
     });
   };
 
+  hideResults = () => {
+    this.setState({
+      showComponent: true,
+    });
+  };
+
   render() {
-    console.log(this.props);
+    // console.log(this.props);
+    const results = this.showResults;
+    const hide = this.hideResults;
+
     return (
       <div className="widget">
         <header className="header-widget">
@@ -50,14 +54,20 @@ class Widget extends Component {
         </header>
         <section className="main-app">
           <h2 className="catch">
-            Ggagne de l'expérience dans la gestion des déchets,
-            tout en t'amusant !
+            Gagne de l'expérience dans la gestion des déchets, tout en t'amusant
+            !
           </h2>
-          <Searchbar />
+          {this.state.showComponent ? (
+            <Searchbar results={results} hide={hide} />
+          ) : (
+            <Results results={results} hide={hide} />
+          )}
         </section>
         <section className="exp">
-        <div className="barre master"><p className="master">niv 0</p>230/1000<p className="master">niv 1</p></div>
-
+          <div className="barre master">
+            <p className="master">niv 0</p>230/1000
+            <p className="master">niv 1</p>
+          </div>
         </section>
       </div>
     );
