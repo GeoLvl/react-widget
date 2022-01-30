@@ -1,16 +1,27 @@
 import React, { Component } from "react";
+import Message from "./Message";
 
 class Results extends Component {
   constructor(props) {
     super(props);
     this.state = {
       showComponent: true,
+      showMessage: false,
     };
   }
+
+  callMessage = () => {
+      console.log("merci")
+    this.setState({
+      showMessage: true,
+    });
+    // this.props.hide()
+  };
 
   render() {
     console.log(this.props);
     return (
+        <>
       <section className="results">
         <div>
           <h2 className="blue">
@@ -37,13 +48,14 @@ class Results extends Component {
               </a>
             </p>
             <br />
+            {this.state.showMessage ? <Message /> :
             <div className="grp-button">
               <button className="small-btn"><a href="https://www.google.fr/maps/search/recyclerie+bordeaux/@44.8382935,-0.5822543,12z/data=!3m1!4b1"
                 target="_blank"
                 rel="noreferrer">Où ?</a></button>
-              <button className="small-btn" onClick={() => this.props.hide()}>Je recycle !
+              <button className="small-btn" onClick={() => this.callMessage()}>Je recycle !
               </button>
-            </div>
+            </div>}
           </div>
         </div>
         <button
@@ -54,6 +66,7 @@ class Results extends Component {
           Play again !
         </button>
       </section>
+      </>
     );
   }
 }

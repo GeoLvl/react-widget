@@ -253,6 +253,14 @@
 .small-btn a {
   text-decoration: none;
   color: black;
+  
+  position: block;
+}
+
+  /* THX */
+
+.thx {
+  
 }
 
 /* EXP */
