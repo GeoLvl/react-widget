@@ -184,21 +184,20 @@
   background-color: #9be9dc;
 }
 .submit:acive {
-    margin-top: 0.5em;
-    height: 2.8rem;
-    width: 100%;
-    background: none;
-    border: none;
-    border-radius: 50px;
-    border: solid #0acdaf 2px;
-    align-self: center;
-    font-size: 1.3rem;
-    font-weight: 700;
-    background-color: #ffffff;
-    
-  }
+  margin-top: 0.5em;
+  height: 2.8rem;
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 50px;
+  border: solid #0acdaf 2px;
+  align-self: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: #ffffff;
+}
 
-  /* RESULTS */
+/* RESULTS */
 
 .results {
   margin-top: 1em;
@@ -208,7 +207,7 @@
   justify-content: space-between;
 }
 
-.results-infos {  
+.results-infos {
   font-family: "Amatic SC", cursive;
   font-size: 1.2rem;
   font-weight: bolder;
@@ -253,14 +252,13 @@
 .small-btn a {
   text-decoration: none;
   color: black;
-  
+
   position: block;
 }
 
-  /* THX */
+/* THX */
 
 .thx {
-  
 }
 
 /* EXP */
@@ -274,5 +272,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-

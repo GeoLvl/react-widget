@@ -1,5 +1,4 @@
 import React from "react";
-// import Button from "../components/Button"
 import Widget from "../components/Widget";
 
 class Home extends React.Component {

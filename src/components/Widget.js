@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Results from "./Results";
 import Searchbar from "./Searchbar";
-// import Results from "./Results";
 
 class Widget extends Component {
   constructor(props) {
@@ -24,7 +23,6 @@ class Widget extends Component {
   };
 
   render() {
-    // console.log(this.props);
     const results = this.showResults;
     const hide = this.hideResults;
 

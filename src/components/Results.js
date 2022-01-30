@@ -11,15 +11,12 @@ class Results extends Component {
   }
 
   callMessage = () => {
-      console.log("merci")
     this.setState({
       showMessage: true,
     });
-    // this.props.hide()
   };
 
   render() {
-    console.log(this.props);
     return (
         <>
       <section className="results">
